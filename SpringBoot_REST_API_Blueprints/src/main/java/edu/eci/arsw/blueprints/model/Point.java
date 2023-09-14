@@ -5,6 +5,8 @@
  */
 package edu.eci.arsw.blueprints.model;
 
+import java.util.Objects;
+
 /**
  *
  * @author hcadavid
@@ -36,6 +38,33 @@ public class Point {
 
     public void setY(int y) {
         this.y = y;
+    }
+
+    @Override
+    public String toString() {
+        return "Point{" + "x=" + x + ", y=" + y  + '}';
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        final Point other = (Point) obj;
+        if (!Objects.equals(this.x, other.x)) {
+            return false;
+        }
+        if (!Objects.equals(this.y, other.y)) {
+            return false;
+        }
+        
+        return true;
     }
     
     
