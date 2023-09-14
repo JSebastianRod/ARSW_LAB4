@@ -37,6 +37,7 @@ Para ilustrar el uso del framework Spring, y el ambiente de desarrollo para el u
 6.	Modifique la configuración con anotaciones para que el Bean ‘GrammarChecker‘ ahora haga uso del  la clase SpanishSpellChecker (para que a GrammarChecker se le inyecte EnglishSpellChecker en lugar de  SpanishSpellChecker. Verifique el nuevo resultado.
 <br>
 Agregamos la etiqueta @Service a la clase SpanishSpellChecker.java:<br>
+
 ![](./img/Punto5-1.png)<br>
 
 Retiramos la etiqueta @Service a la clase EnglishSpellChecker.java:<br>
